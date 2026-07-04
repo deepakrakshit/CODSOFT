@@ -2,14 +2,15 @@
 
 **Author:** Deepak Rakshit
 
-## Status: In Progress
+## Status: Core Gameplay (2-Player)
 
-Currently, this project initializes a 3x3 Tic-Tac-Toe board and handles the basic command-line rendering. 
+The project now supports a fully playable Human vs Human mode. Players take turns entering numbers from 1 to 9 to place their 'X' or 'O' on the board.
 
 ### Features
-- 3x3 grid initialization.
-- Console-based board display.
+- Input validation (prevents overwriting spaces or entering invalid keys).
+- Win detection for rows, columns, and diagonals.
+- Draw detection.
 
-### How to Run
+### How to Play
 ```bash
 python tic_tac_toe.py
