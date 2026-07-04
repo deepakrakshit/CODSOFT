@@ -1,14 +1,36 @@
 # CODSOFT AI Internship
 
-This repository contains the projects completed during my Artificial Intelligence Virtual Internship at CodSoft.
+Welcome to my CodSoft Artificial Intelligence Internship repository.
+
+This repository contains the projects I completed during my Artificial Intelligence Virtual Internship at CodSoft. Each project is developed to improve my understanding of AI concepts and strengthen my Python programming skills.
 
 ## Internship Details
 
-- Domain: Artificial Intelligence
-- Organization: CodSoft
+- **Organization:** CodSoft
+- **Domain:** Artificial Intelligence
+- **Duration:** 10 June 2026 – 10 July 2026
 
 ## Projects
 
-- Task 1 – Rule-Based Chatbot (In Progress)
+### ✅ Task 1 – Rule-Based Chatbot
 
-More tasks will be added as they are completed.
+A Python-based chatbot that responds to user queries using predefined rules and simple pattern matching techniques.
+
+**Features**
+- Greeting detection
+- Basic conversation
+- Bot introduction
+- Date and time responses
+- Help command
+- Thank you response
+- Exit command
+- Unknown input handling
+
+---
+
+### Upcoming Projects
+
+- 🔄 Task 2 – Tic-Tac-Toe AI
+- 🔄 Task 4 – Recommendation System
+
+More projects will be added as they are completed.
