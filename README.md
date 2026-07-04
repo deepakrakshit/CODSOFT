@@ -28,9 +28,14 @@ A Python-based chatbot that responds to user queries using predefined rules and 
 
 ---
 
+### 🔄 Task 2 – Tic-Tac-Toe AI (In Progress: Initial Setup)
+
+A command-line Tic-Tac-Toe game. Currently setting up the board state and display functions.
+
+---
+
 ### Upcoming Projects
 
-- 🔄 Task 2 – Tic-Tac-Toe AI
 - 🔄 Task 4 – Recommendation System
 
 More projects will be added as they are completed.
