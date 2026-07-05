@@ -27,6 +27,7 @@ Develop a simple rule-based chatbot that responds to user inputs using predefine
 Task1_Rule_Based_Chatbot/
 │
 ├── chatbot.py
+├── requirements.txt
 └── README.md
 ```
 
