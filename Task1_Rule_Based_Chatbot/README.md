@@ -71,4 +71,5 @@ Bot: Goodbye! Have a great day.
 
 ## Author
 
+**Deepak Rakshit**
 Developed as part of the **CodSoft Artificial Intelligence Internship**.
