@@ -2,15 +2,13 @@
 
 **Author:** Deepak Rakshit
 
-## Status: Core Gameplay (2-Player)
+## Status: Random AI Implemented
 
-The project now supports a fully playable Human vs Human mode. Players take turns entering numbers from 1 to 9 to place their 'X' or 'O' on the board.
+The game now pits the human player against an AI opponent. Currently, the AI is intentionally simple and chooses its moves completely at random from the available empty spaces.
 
 ### Features
-- Input validation (prevents overwriting spaces or entering invalid keys).
-- Win detection for rows, columns, and diagonals.
-- Draw detection.
+- Human vs Computer gameplay.
+- Automated AI turn execution.
 
-### How to Play
-```bash
-python tic_tac_toe.py
+### Next Steps
+Implement the Minimax algorithm to make the AI unbeatable.

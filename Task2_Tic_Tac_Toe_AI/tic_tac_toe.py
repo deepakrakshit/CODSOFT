@@ -1,3 +1,5 @@
+import random
+
 def display_board(board):
     print(f"\n {board[0]} | {board[1]} | {board[2]} ")
     print("---+---+---")
@@ -6,11 +8,10 @@ def display_board(board):
     print(f" {board[6]} | {board[7]} | {board[8]} \n")
 
 def check_win(board, player):
-    """Checks all 8 possible winning combinations for the given player."""
     win_paths = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], # Rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], # Columns
-        [0, 4, 8], [2, 4, 6]             # Diagonals
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],
+        [0, 4, 8], [2, 4, 6]
     ]
     for path in win_paths:
         if board[path[0]] == player and board[path[1]] == player and board[path[2]] == player:
@@ -18,47 +19,62 @@ def check_win(board, player):
     return False
 
 def check_draw(board):
-    """Returns True if there are no empty spaces left."""
     return ' ' not in board
+
+def get_random_ai_move(board):
+    """Finds all empty spaces and selects one randomly."""
+    empty_spaces = []
+    for i in range(9):
+        if board[i] == ' ':
+            empty_spaces.append(i)
+    return random.choice(empty_spaces)
 
 def main():
     board = [' '] * 9
-    current_player = 'X'
+    human = 'X'
+    ai = 'O'
     
-    print("Welcome to Tic-Tac-Toe! (Human vs Human)")
-    print("Use numbers 1-9 to make a move (1 is top-left, 9 is bottom-right).")
+    print("Welcome to Tic-Tac-Toe! (Human vs Basic AI)")
+    print("You are X.")
+    print("The AI is O.")
     
     while True:
         display_board(board)
         
-        # Get input and validate
+        # --- Human Turn ---
         try:
-            move = int(input(f"Player {current_player}, enter your move (1-9): ")) - 1
+            move = int(input("Enter your move (1-9): ")) - 1
             if move < 0 or move > 8 or board[move] != ' ':
-                print("Invalid move, try again.")
+                print("Invalid move. Try again.")
                 continue
         except ValueError:
             print("Please enter a valid number.")
             continue
             
-        # Apply move
-        board[move] = current_player
+        board[move] = human
         
-        # Check game over conditions
-        if check_win(board, current_player):
+        if check_win(board, human):
             display_board(board)
-            print(f"Congratulations! Player {current_player} wins!")
+            print("You won!")
             break
         elif check_draw(board):
             display_board(board)
             print("It's a draw!")
             break
             
-        # Switch turns
-        if current_player == 'X':
-            current_player = 'O'
-        else:
-            current_player = 'X'
+        # --- AI Turn ---
+        print("AI is making a move...")
+        ai_move = get_random_ai_move(board)
+        board[ai_move] = ai
+        
+        if check_win(board, ai):
+            display_board(board)
+            print("AI wins!")
+            break
+        elif check_draw(board):
+            display_board(board)
+            print("It's a draw!")
+            break
 
 if __name__ == "__main__":
     main()

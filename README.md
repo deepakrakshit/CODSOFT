@@ -28,9 +28,9 @@ A Python-based chatbot that responds to user queries using predefined rules and 
 
 ---
 
-### 🔄 Task 2 – Tic-Tac-Toe AI (In Progress: Core Gameplay)
+### 🔄 Task 2 – Tic-Tac-Toe AI (In Progress: Random AI)
 
-A playable command-line Tic-Tac-Toe game. Currently supports 2-player (Human vs Human) functionality with win/draw detection and input validation.
+A Human vs Computer Tic-Tac-Toe game. An automated AI opponent has been added, currently utilizing randomized move selection while the search algorithm is being developed.
 
 ---
 
