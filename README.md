@@ -28,9 +28,16 @@ A Python-based chatbot that responds to user queries using predefined rules and 
 
 ---
 
-### 🔄 Task 2 – Tic-Tac-Toe AI (In Progress: Random AI)
+### ✅ Task 2 – Tic-Tac-Toe AI
 
-A Human vs Computer Tic-Tac-Toe game. An automated AI opponent has been added, currently utilizing randomized move selection while the search algorithm is being developed.
+An AI agent that plays the classic game of Tic-Tac-Toe against a human player. The project utilizes the Minimax algorithm to evaluate game states, resulting in an unbeatable AI opponent.
+
+**Features**
+- Command-line game interface
+- Human vs Computer gameplay
+- Strict standard library Python implementation
+- Unbeatable Minimax decision tree
+- Depth-scoring mechanism for optimal move selection
 
 ---
 
