@@ -41,6 +41,6 @@ An AI agent that plays the classic game of Tic-Tac-Toe against a human player. T
 
 ---
 
-### 🔄 Task 4 – Recommendation System (In Progress: Data Setup)
+### 🔄 Task 4 – Recommendation System (In Progress: Basic Matching)
 
-A simple recommendation engine. Currently implementing the foundational dataset and basic lookup logic.
+A content-based recommendation engine. The system currently filters and suggests movies based on simple genre overlap.

@@ -2,14 +2,17 @@
 
 **Author:** Deepak Rakshit
 
-## Status: In Progress (Data Setup)
+## Status: Basic Matching Implemented
 
-Currently setting up the core data structure for the recommendation engine. The project uses a pure Python dictionary to map movie titles to their respective genres.
+The system can now take a user's movie input and find other movies in the database that share at least one genre using Python sets. 
 
 ### Features
-- Hardcoded movie dataset.
-- Case-insensitive movie lookup function.
+- Unranked, broad recommendation matching.
+- Excludes the search query from the final recommendation list.
 
 ### How to Run
 ```bash
 python recommendation.py
+
+### Next Steps
+Implement a scoring system to rank recommendations from best match to worst match.

@@ -1,4 +1,3 @@
-# A simple hardcoded dataset of movies and their genres
 MOVIE_DATABASE = {
     "The Matrix": ["Action", "Sci-Fi"],
     "Inception": ["Action", "Sci-Fi", "Thriller"],
@@ -11,22 +10,43 @@ MOVIE_DATABASE = {
 }
 
 def get_movie_genres(movie_title):
-    """Fetches the genres for a given movie title (case-insensitive)."""
     for title, genres in MOVIE_DATABASE.items():
         if title.lower() == movie_title.lower():
             return title, genres
     return None, None
 
-def main():
-    print("Version 1: Movie Database Initialized")
-    target = "Inception"
-    title, genres = get_movie_genres(target)
+def get_basic_recommendations(target_title, target_genres):
+    """Finds any movie that shares at least one genre with the target."""
+    recommendations = []
     
-    if title:
-        print(f"Movie found: {title}")
-        print(f"Genres: {', '.join(genres)}")
-    else:
-        print("Movie not found in database.")
+    for title, genres in MOVIE_DATABASE.items():
+        # Don't recommend the movie the user just searched for
+        if title.lower() == target_title.lower():
+            continue
+            
+        # Check if there is any overlap in genres using Python sets
+        shared_genres = set(target_genres).intersection(set(genres))
+        if len(shared_genres) > 0:
+            recommendations.append(title)
+            
+    return recommendations
+
+def main():
+    print("Version 2: Basic Overlap Recommendation")
+    search_query = input("Enter a movie you like (e.g., The Matrix, Inception): ")
+    
+    title, genres = get_movie_genres(search_query)
+    
+    if not title:
+        print("Sorry, that movie is not in our database.")
+        return
+        
+    print(f"\nSince you liked {title} ({', '.join(genres)}):")
+    recommendations = get_basic_recommendations(title, genres)
+    
+    print("You might also like:")
+    for rec in recommendations:
+        print(f"- {rec}")
 
 if __name__ == "__main__":
     main()
