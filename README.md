@@ -41,6 +41,17 @@ An AI agent that plays the classic game of Tic-Tac-Toe against a human player. T
 
 ---
 
-### 🔄 Task 4 – Recommendation System (In Progress: Basic Matching)
+### ✅ Task 4 – Recommendation System
 
-A content-based recommendation engine. The system currently filters and suggests movies based on simple genre overlap.
+A content-based recommendation engine that suggests movies to users based on genre similarity. The system ranks recommendations using set mathematics to calculate match scores.
+
+**Features**
+- Interactive command-line interface
+- Content-Based Filtering algorithm
+- Ranked recommendation outputs
+- Strict standard library implementation (No Pandas/Numpy required)
+- Case-insensitive data querying
+
+---
+
+*Internship minimum requirement of 3 tasks successfully completed.*
