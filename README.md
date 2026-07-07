@@ -41,8 +41,6 @@ An AI agent that plays the classic game of Tic-Tac-Toe against a human player. T
 
 ---
 
-### Upcoming Projects
+### 🔄 Task 4 – Recommendation System (In Progress: Data Setup)
 
-- 🔄 Task 4 – Recommendation System
-
-More projects will be added as they are completed.
+A simple recommendation engine. Currently implementing the foundational dataset and basic lookup logic.
